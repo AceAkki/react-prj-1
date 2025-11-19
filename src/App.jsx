@@ -6,14 +6,12 @@ export default function App () {
  
   return (
     <>
-      {/* <Header />
+      <Header />
       <div className="entry-wrap">
-          
-
-      </div> */}
+        
 
       <CreateEntry 
-        img="https://cdn.pixabay.com/photo/2025/04/29/13/22/cityscape-9567180_1280.jpg"
+        img={{src:"https://cdn.pixabay.com/photo/2025/04/29/13/22/cityscape-9567180_1280.jpg", alt:"japan"}}
         country="Japan"
         map="https://goo.gl/maps/19Af5yVV8Kk"
         title="Mount Fuji"
@@ -22,7 +20,7 @@ export default function App () {
 
       />
       <CreateEntry 
-        img="https://cdn.pixabay.com/photo/2025/04/29/13/22/cityscape-9567180_1280.jpg"
+        img={{src:"https://cdn.pixabay.com/photo/2025/04/29/13/22/cityscape-9567180_1280.jpg", alt:"italy"}}
         country="Italy"
         map="https://goo.gl/maps/Jow3QspDkAPgR5x9A"
         title="Mount Fuji"
@@ -30,6 +28,7 @@ export default function App () {
         desc="Italy is a country known for its rich history, art, architecture, and cuisine. From the ancient ruins of Rome to the romantic canals of Venice, Italy's cultural and natural beauty is unrivaled. The country is famous for its contributions to art (think Leonardo da Vinci and Michelangelo), its iconic architecture (the Colosseum, the Leaning Tower of Pisa), and its culinary delights like pasta, pizza, and gelato. Italy's diverse regions each offer something unique, from the fashion capital of Milan to the stunning coastal cliffs of the Amalfi Coast. Italians are known for their warm hospitality, and visiting Italy feels like stepping into a living history book."
 
       />
+      </div>
     
     </>
   )
