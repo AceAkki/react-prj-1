@@ -17,7 +17,7 @@ export default function CreateEntry (props) {
     return (
         <article className="entry-card" id={props.id}>
             <div className="image-wrap">
-                <img src={props.img}  alt={props.alt} />
+                <img src={props.img.src}  alt={props.img.alt} />
             </div>
             <div className="content-wrap">
                 <div className="top-wrap">
