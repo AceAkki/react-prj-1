@@ -19,12 +19,8 @@ export default function App () {
 
   const travelEntries = travelData.map((entry) => {
     return <CreateEntry
-        id={entry.id}
-        img={{ src:entry.img.src, alt:entry.img.alt }}
-        map={entry.map}
-        title={entry.title}
-        date={entry.date}
-        desc={entry.desc}
+        key={entry.id}
+        object={entry}
       />
   })
 

@@ -1,6 +1,9 @@
 import * as Icon from "@phosphor-icons/react";
 
 export default function CreateEntry (props) {
+    
+    let obj = props.object;
+    console.log(obj, props)
     // let timeOftheDay;
 
     // const hours = new Date().getHours();
@@ -15,23 +18,23 @@ export default function CreateEntry (props) {
     //     timeOftheDay = "night"
     // }
     return (
-        <article className="entry-card" id={props.id}>
+        <article className="entry-card">
             <div className="image-wrap">
-                <img src={props.img.src}  alt={props.img.alt} />
+                <img src={obj.img.src}  alt={obj.img.alt} />
             </div>
             <div className="content-wrap">
                 <div className="top-wrap">
-                    <Icon.MapPin size={16} color="orangered" weight="fill"/>
+                    <Icon.MapPin size={16} colo r="orangered" weight="fill"/>
                     <span>
-                        {props.country}
+                        {obj.country}
                     </span>
-                    <a href={props.map}> View on Google Maps</a>
+                    <a href={obj.map}> View on Google Maps</a>
 
                 </div>
-                <h2 className="content-title"> {props.title} </h2>
-                <h5 className="content-date"> {props.date} </h5>
+                <h2 className="content-title"> {obj.title} </h2>
+                <h5 className="content-date"> {obj.date} </h5>
                 <p className="content">
-                    {props.desc}
+                    {obj.desc}
                 </p>
             </div>
         </article>
